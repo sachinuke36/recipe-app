@@ -82,9 +82,11 @@ This app uses [TheMealDB API](https://www.themealdb.com/api.php).
 
 ## 🎥 Screenshots
 
-- ![Welcome screen](./assets/images/welcome-screen.png)
-- ![Home screen](./assets/images/home-screen.png)
-- ![Info page](./assets/images/info-page.png)
+<img src="./assets/images/welcome-screen.png" alt="Welcome screen" width="400"/>
+
+<img src="./assets/images/home-screen.png" alt="Home screen" width="400"/>
+
+<img src="./assets/images/info-page.png" alt="Info page" width="400"/>
 ---
 
 ## 🛠️ Project Scripts
