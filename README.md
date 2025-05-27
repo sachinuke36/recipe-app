@@ -1,50 +1,131 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🍽️ Recipe App
 
-## Get started
+A beautifully crafted mobile recipe application built using **React Native** and **Expo**, featuring category-based meal browsing, animated UI elements, and embedded YouTube cooking tutorials. It fetches data from [TheMealDB API](https://www.themealdb.com/api.php).
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- 🍛 Browse meals by category
+- 🎥 Watch embedded YouTube recipe videos
+- 🧠 Save data with AsyncStorage for offline support
+- 🎨 Stylish UI with Tailwind CSS (via NativeWind)
+- 🧩 Dynamic grid layout with Masonry
+- 🌀 Smooth animations with Reanimated 3
+- ⚙️ Works on Android, iOS, and Web via Expo
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🚀 Getting Started
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Prerequisites
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Node.js ≥ 18
+- Expo CLI:  
+  ```bash
+  npm install -g expo-cli
+  ```
 
-## Get a fresh project
-
-When you're ready, run:
+### Installation
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/recipe-app.git
+cd recipe-app
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Run the App
 
-## Learn more
+- On Android:
+  ```bash
+  npm run android
+  ```
+- On iOS:
+  ```bash
+  npm run ios
+  ```
+- On Web:
+  ```bash
+  npm run web
+  ```
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📦 Tech Stack
 
-## Join the community
+- **React Native (0.79.2)**
+- **Expo SDK 53**
+- **Expo Router**
+- **Reanimated 3**
+- **Tailwind (via NativeWind)**
+- **AsyncStorage**
+- **Masonry List**
+- **React Navigation**
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🌐 API Reference
+
+This app uses [TheMealDB API](https://www.themealdb.com/api.php).
+
+- Fetch all categories:  
+  `https://www.themealdb.com/api/json/v1/1/categories.php`
+
+- Fetch meals by category:  
+  `https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`
+
+- Fetch full meal details by ID:  
+  `https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772`
+
+---
+
+## 🎥 Screenshots
+
+- ![Welcome screen](./assets/images/welcome-screen.png)
+- ![Home screen](./assets/images/home-screen.png)
+- ![Info page](./assets/images/info-page.png)
+---
+
+## 🛠️ Project Scripts
+
+- `npm start`: Launch the app using Expo
+- `npm run android`: Open on Android emulator/device
+- `npm run ios`: Open on iOS simulator
+- `npm run web`: Run the app in the browser
+- `npm run lint`: Run linter checks
+- `npm run reset-project`: Custom script to reset project configs
+
+---
+
+## 📁 Folder Structure (suggested)
+
+```
+/app
+  /screens
+  /components
+  /hooks
+  /constants
+/assets
+/scripts
+```
+
+---
+
+## 🧪 Testing
+
+Currently manual testing through Expo – consider adding Jest and Detox in the future.
+
+---
+
+## 🙌 Acknowledgments
+
+- [TheMealDB](https://www.themealdb.com) for the open API
+- Expo team for excellent developer tooling
+- React Native community & contributors
+
+---
+
+## 📬 Contact
+
+Feel free to reach out via [sachinuke36@gmail.com](mailto:sachinuke36@gmail.com) or open an issue for feature suggestions.
